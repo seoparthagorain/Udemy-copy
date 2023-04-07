@@ -9,7 +9,7 @@ function Tabs() {
         <nav class="nav d-flex tab_slider_nav">
           <a class="p-2 link-secondary tab_nav" href="#">World</a>
           <a class="p-2 link-secondary tab_nav" href="#">U.S.</a>
-          <a class="p-2 link-secondary tab_nav" href="#">Technology</a>
+          <a class="p-2 link-secondary tab_nav" href="#">Technolo</a>
           <a class="p-2 link-secondary tab_nav" href="#">Design</a>
           <a class="p-2 link-secondary tab_nav" href="#">Culture</a>
           <a class="p-2 link-secondary tab_nav" href="#">Business</a>

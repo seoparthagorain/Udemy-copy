@@ -195,20 +195,21 @@
 	.tab_slider_nav {
 		justify-content: center;
 	}
-}
+} 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
 	#search-bar {
-		width: 300px;
+		width: 570px;
 	}
 
 	.tab_slider_nav {
 		justify-content: center;
 	}
+
 	.tab_slider_desc {
 		width: 72%;
 	}
