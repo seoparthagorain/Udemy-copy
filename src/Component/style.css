@@ -133,13 +133,177 @@
 
 .tab_slider {
 	/* border: 1px solid darkgreen; */
-	height: 400px;
+	height: 700px;
 	width: 100%;
 }
 
 .tab_slider_desc {
 	width: 40%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css for cards */
+.productCarousel {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 25px;
+	/* border: 2px solid red; */
+	padding: 25px;
+}
+
+.product_container {
+	padding: 0 10px;
+	display: flex;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+.prev-button,
+.next-button {
+	border: none;
+	width: 52px;
+	height: 100%;
+	/* background-color: rgba(52, 65, 22, 0.621); */
+	background-color: whitesmoke;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.next-button {
+	right: 0;
+}
+
+.prev-button p,
+.next-button p {
+	font-size: 30px;
+	background-color: #1c1d1f;
+	background-color: black;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+	border-radius: 50px;
+	color: white;
+	font-weight: bold;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+
+
+}
+
+.cards {
+	min-width: 300px;
+	max-width: 300px;
+
+	height: 400px;
+	background-color: black;
+	margin: 10px;
+	color: white;
+}
+
+.product_container {
+	display: flex;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	/* for smooth scrolling */
+	width: 100%;
+	/* adjust the width as needed */
+}
+
+.cards {
+	width: 250px;
+	/* adjust the width of the cards as needed */
+	height: 250px;
+	/* adjust the height of the cards as needed */
+	margin-right: 20px;
+	/* adjust the margin between the cards as needed */
+	background-color: #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsiveness of navbar */
 /* Extra small devices (phones, 600px and down) */
@@ -187,6 +351,10 @@
 		width: fit-content;
 
 	}
+	.tab
+	{
+		padding: 15px 20px;
+	}
 
 	.tab_slider_desc {
 		width: 100%;
@@ -195,7 +363,21 @@
 	.tab_slider_nav {
 		justify-content: center;
 	}
-} 
+	.productCarousel
+	{
+		padding: 3px;
+	}
+	.product_container {
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+
+	.prev-button,
+	.next-button
+	{
+		display: none;
+	}
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
@@ -213,6 +395,7 @@
 	.tab_slider_desc {
 		width: 72%;
 	}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductCourasel from './ProductCourasel'
 
 function Tabs() {
   return (
@@ -25,6 +26,7 @@ function Tabs() {
         <h2 className="tab_slider_head">Expand your career opportunities with Python</h2>
         <p className="tab_slider_desc">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal </p>
         <button type="button" className="btn btn-primary me-md-3" id='signup-btn'>Explore Python</button>
+        <ProductCourasel/>
 
       </div>
     </div>
