@@ -8,6 +8,7 @@ function ProductCarousel() {
         const productContainer = productContainerRef.current;
         const width = productContainer.offsetWidth;
         productContainer.scrollLeft -= width;
+        console.log(width)
     };
 
     const btnPressNext = () => {

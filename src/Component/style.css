@@ -27,6 +27,18 @@
 	transition: 0.5s all ease-in-out;
 }
 
+.wishlist {
+	margin-left: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.filterbox {
+	margin-left: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
 #carousel-set {
 	width: 100%;
 	height: 400px;
@@ -351,8 +363,8 @@
 		width: fit-content;
 
 	}
-	.tab
-	{
+
+	.tab {
 		padding: 15px 20px;
 	}
 
@@ -363,18 +375,18 @@
 	.tab_slider_nav {
 		justify-content: center;
 	}
-	.productCarousel
-	{
+
+	.productCarousel {
 		padding: 3px;
 	}
+
 	.product_container {
 		overflow-x: scroll;
 		overflow-y: hidden;
 	}
 
 	.prev-button,
-	.next-button
-	{
+	.next-button {
 		display: none;
 	}
 }

@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./style.css"
 import { Link, useLocation } from 'react-router-dom'
 function Nav() {
   // Get the current location object using the useLocation hook from react-router-dom
   const location = useLocation();
+  const [isSolid, setIsSolid] = useState(false);
+  const [filter, setFilter] = useState(false);
+
+  const handleClick1 = () => {
+    setIsSolid(!isSolid);
+    // console.log(isSolid)
+  };
+  const handleClick2 = () => {
+    setFilter(!filter);
+    // console.log(isSolid)
+  };
+
+
 
 
   return (
@@ -33,8 +46,13 @@ function Nav() {
               <form className="d-flex align-items-center">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-bar" />
                 <button className="btn btn-outline-success" id='search-btn' type="submit">Search</button>
-                <i class="fa-solid fa-magnifying-glass" typeof='submit' id='glass'></i>
+                <i className="fa-solid fa-magnifying-glass" typeof='submit' id='glass'></i>
+                <i className={`${isSolid ? "fa-solid fa-heart-circle-check" : "fa-regular fa-heart"}  wishlist`} onClick={handleClick1}></i>
+                <i className={`${filter ? "fa-regular fa-filter " : "fa-light fa-filter"} filterbox`} onClick={handleClick2}></i>
+                {/* <i class="fa-regular fa-heart"></i> */}
+
               </form>
+
             </li>
 
 
